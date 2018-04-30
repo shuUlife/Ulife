@@ -1,19 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title></title>
-    <script type="text/javascript">
-    	
-   		document.addEventListener('plusready', function(){
-   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
-   			
-   		});
-   		
-    </script>
-</head>
-<body>
-	
-</body>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Color theme for statusbar -->
+		<meta name="theme-color" content="#2196f3">
+		<title>Ulife</title>
+		<!-- Path to Framework7 Library CSS, Material Theme -->
+		<link rel="stylesheet" href="./css/framework7.min.css">
+		<!-- Path to your custom app styles-->
+		<link rel="stylesheet" href="./css/main.css">
+		<!--framework7图标css-->
+		<link rel="stylesheet" href="./css/framework7-icons.css">
+		<!--rem自适应js-->
+		<script type="text/javascript" src="./js/selfAdapt.js"></script>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+			});
+		</script>
+	</head>
+
+	<body>
+		<!-- App root element -->
+		<div id="Ulife_forall">
+			<!-- Statusbar overlay -->
+			<div class="statusbar"></div>
+			<!-- Your main view, should have "view-main" class -->
+			<div class="view view-main">
+				<!-- Initial Page, "data-name" contains page name -->
+				<div data-name="home" class="page">
+					<!-- Top Navbar -->
+					<div class="navbar home_navbar_div">
+						<div class="navbar-inner">
+							<div class="title home_navbar_title">Ulife</div>
+							<div class="right">
+								<a href="#" class="link icon-only"><i class="f7-icons">search</i></a>
+							</div>
+						</div>
+					</div>
+					<!-- Toolbar -->
+					<div class="toolbar tabbar tabbar-labels toolbar-bottom-md home_toolbar">
+						<div class="toolbar-inner home_toolbar_div">
+							<a href="#tab1" class="tab-link tab-link-active home_toolbar">
+								<i class="icon f7-icons">home</i>
+								<span class="tabbar-label">首页</span>
+							</a>
+							<a href="#tab2" class="tab-link home_toolbar">
+								<i class="icon f7-icons">compass</i>
+								<span class="tabbar-label">发现</span>
+							</a>
+							<a href="#tab3" class="tab-link home_toolbar">
+								<i class="icon f7-icons">person</i>
+								<span class="tabbar-label">我的</span>
+							</a>
+						</div>
+					</div>
+					<!-- Scrollable page content -->
+					<div class="page-content">
+						<!--滚播图片  图片都应为png格式-->
+						<div class="swiper-container swiper-init home_swiper" data-pagination='{"el": ".swiper-pagination"}' data-space-between="0" data-speed="400">
+							<!-- Slides wrapper -->
+							<div class="swiper-wrapper home_swiper">
+								<!-- Slides -->
+								<div class="swiper-slide home_swiper">
+									<a href="#"><img src="./test/g20.jpg" /></a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#"><img src="./test/success.jpg" /></a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#"><img src="./test/活动界面.jpg" /></a>
+								</div>
+							</div>
+							<!-- Pagination, if required -->
+							<div class="swiper-pagination home_swiper-pagination"></div>
+						</div>
+						<!--椭圆形遮挡块-->
+						<div id="home_circle"></div>
+						<!--页签组件-->
+						<!-- Tabs swipeable wrapper, required to switch tabs with swipes -->
+							<div class="toolbar tabbar home_subtoolbar">
+								<div class="toolbar-inner">
+									<a href="#tab4" class="tab-link tab-link-active">热门</a>
+									<a href="#tab5" class="tab-link">推荐</a>
+									<a href="#tab6" class="tab-link">新活动</a>
+								</div>
+							</div>
+							<div class="tabs-swipeable-wrap">
+								<!-- Tabs, tabs wrapper -->
+								<div class="tabs">
+									<!-- Tab 1, active by default -->
+									<div id="tab4" class="tab tab-active">
+										... Tab 1 content ...
+									</div>
+									<!-- Tab 2 -->
+									<div id="tab5" class="tab">
+										... Tab 2 content ...
+									</div>
+									<!-- Tab 3 -->
+									<div id="tab6" class="tab">
+										... Tab 3 content ...
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Path to Framework7 Library JS-->
+		<script type="text/javascript" src="./js/framework7.min.js"></script>
+		<!-- Path to your app js-->
+		<script type="text/javascript" src="./js/main.js"></script>
+	</body>
+
 </html>

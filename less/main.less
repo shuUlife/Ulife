@@ -1,0 +1,96 @@
+@maincolor: #FE9246;
+@deepgraytext: #666666;
+@bg:#f2f2f2;
+#Ulife_forall {
+    width: 7.2rem;
+    height: 100%;
+    background: @bg;
+}
+
+.page{
+    background: @bg!important;
+}
+
+//解决.page-content上方空隙的问题，因为原文档写的是px单位，而实际用的rem
+.page-content{
+    padding-top: 0.44rem!important;
+}
+
+//主页导航栏
+.home_navbar_div {
+    background: @maincolor!important;
+    height: 0.96rem!important;
+    .home_navbar_title {
+        float: left!important;
+        margin-left: 2.84rem!important;
+        font-size: 0.5rem!important;
+    }
+    i{
+        font-size: 0.44rem;
+        float: right!important;
+        margin-right: 0.25rem!important;
+    }
+}
+.navbar::after{
+    display: none;
+}
+
+//主页滚播图片
+.home_swiper {
+    width: 7.2rem;
+    height: 4.05rem;
+    img {
+        width: 7.2rem;
+        height: 4.05rem;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .swiper-pagination-bullet-active {
+        background: @maincolor!important;
+    }
+    .home_swiper-pagination{
+        margin-bottom: 0.17rem!important;
+    }
+}
+
+#home_circle{
+    width: 7.2rem;
+    height: 0.24rem;
+    background: white;
+    border-radius: 90% 90% 0 0;
+    position: relative;
+    z-index: 5000;
+    bottom: 0.24rem;
+    float: left;
+}
+//主页热门/推荐/新活动
+.home_subtoolbar{
+    height: 0.96rem!important;
+    border: none!important;
+    div{
+        background: white!important;
+        a{
+            color: black!important;
+            font-size: 0.36rem!important;
+        }
+    }
+}
+
+//主页菜单栏
+.home_toolbar{
+    height: 0.96rem!important;
+    position: relative;
+    z-index: 999!important;
+}
+.home_toolbar_div {
+    background: #ffffff!important;
+    height: 0.96rem!important;
+    .home_toolbar i {
+        font-size: 0.4rem!important;
+        color: @deepgraytext!important;
+    }
+    .home_toolbar span {
+        font-size: 0.2rem!important;
+        color: @deepgraytext!important;
+    }
+}

@@ -1,4 +1,4 @@
-﻿{
+{
     "@platforms": ["android", "iPhone", "iPad"],
     "id": "H5E0A2F27",/*应用的标识，创建应用时自动生成，勿手动修改*/
     "name": "a",/*应用名称，程序桌面图标名称*/
@@ -135,5 +135,42 @@
                 }
             }
         }
-    }
+    },
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"test/活动界面.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"fonts/Framework7Icons-Regular.woff",
+				"js/main.js",
+				"test/search.png",
+				"fonts/Framework7Icons-Regular.woff2",
+				"css/main.css",
+				"test/xnick头像.jpg",
+				"fonts/Framework7Icons-Regular.ttf",
+				"test/suse.jpg",
+				"test/渐变.png",
+				"css/framework7-icons.css",
+				"less/main.less",
+				"LICENSE",
+				"fonts/Framework7Icons-Regular.eot",
+				"js/framework7.min.js",
+				"test/二维码.jpg",
+				"css/framework7.min.css",
+				"test/success.jpg",
+				"js/selfAdapt.js",
+				"test/头像.jpg",
+				"test/时间线.png",
+				"test/g20.jpg",
+				"test/suse logo.jpg"
+			]
+		}
+	}
 }
