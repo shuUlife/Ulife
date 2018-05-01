@@ -15,7 +15,7 @@
   background: #f2f2f2 !important;
 }
 .page .page-content {
-  padding-top: 0.44rem!important;
+  padding-top: 0.96rem!important;
 }
 .home_navbar_div {
   background: #FE9246 !important;
@@ -53,12 +53,12 @@
 }
 #home_circle {
   width: 7.2rem;
-  height: 0.24rem;
+  height: 0.12rem;
   background: white;
   border-radius: 90% 90% 0 0;
   position: relative;
   z-index: 5000;
-  bottom: 0.24rem;
+  bottom: 0.12rem;
   float: left;
 }
 .home_subtoolbar {
@@ -68,14 +68,10 @@
 .home_subtoolbar div {
   background: white!important;
 }
-.home_subtoolbar div a {
-  color: black!important;
+.home_subtoolbar div span {
+  color: black;
   font-size: 0.36rem!important;
   opacity: 0.75;
-}
-.home_subtoolbar div .home_subtoolbar_active {
-  color: #FE9246 !important;
-  opacity: 1!important;
 }
 .home_toolbar {
   height: 0.96rem!important;
@@ -87,23 +83,28 @@
   height: 0.96rem!important;
 }
 .home_toolbar .home_toolbar_div .home_toolbar i {
-  font-size: 0.4rem!important;
+  font-size: 0.45rem!important;
+  margin-bottom: 0.05rem;
   color: #666666;
 }
 .home_toolbar .home_toolbar_div .home_toolbar span {
   font-size: 0.2rem!important;
   color: #666666;
 }
-.home_toolbar .home_toolbar_div .home_tabbar_iconactive {
+.tab-link-active i {
   color: #FE9246 !important;
+  opacity: 1!important;
+}
+.tab-link-active span {
+  color: #FE9246 !important;
+  opacity: 1!important;
 }
 .card {
-  height: 3.2rem!important;
-  width: 3.2rem!important;
+  border-radius: 3%!important;
 }
 .home_cardheader {
-  height: 1.8rem;
-  width: 3.2rem;
+  height: 3.2rem!important;
+  width: 3.2rem!important;
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -111,32 +112,34 @@
   margin-left: 0.265rem!important;
   margin-top: 0.25rem!important;
   margin-right: 0rem!important;
+  margin-bottom: 0!important;
 }
-.home_cardheader .card-header {
+.home_cardheader .home_card-header {
   height: 1.8rem;
   width: 3.2rem;
   background-size: cover;
   background-position: center;
   color: #fff;
+  border-radius: 3% 3% 0 0;
 }
-.home_cardheader .card-content-padding {
+.home_cardheader .home_card-content-padding {
   color: #8e8e93;
   height: 1.4rem;
   width: 3.2rem;
   padding: 0;
   margin: 0;
 }
-.home_cardheader .card-content-padding .home_cardtitle {
+.home_cardheader .home_card-content-padding .home_cardtitle {
   font-size: 0.3rem;
   margin: 0;
   color: black;
   margin-top: 0.13rem;
   margin-left: 0.08rem;
 }
-.home_cardheader .card-content-padding .home_card_orgdiv {
+.home_cardheader .home_card-content-padding .home_card_orgdiv {
   height: 0.32rem;
 }
-.home_cardheader .card-content-padding .home_card_orgdiv .home_tabs_orgimg {
+.home_cardheader .home_card-content-padding .home_card_orgdiv .home_tabs_orgimg {
   width: 0.32rem;
   height: 0.32rem;
   max-height: 100%;
@@ -144,7 +147,7 @@
   margin-left: 0.08rem;
   border-radius: 100%;
 }
-.home_cardheader .card-content-padding .home_card_orgdiv .home_tabs_orgname {
+.home_cardheader .home_card-content-padding .home_card_orgdiv .home_tabs_orgname {
   margin-left: 0.17rem;
   padding: 0;
   font-size: 0.22rem;
@@ -152,16 +155,86 @@
   position: relative;
   bottom: 0.05rem;
 }
-.home_cardheader .card-content-padding .home_carddetail {
+.home_cardheader .home_card-content-padding .home_carddetail {
   margin-top: 0.1rem;
   padding-left: 0.08rem;
   width: 3.12rem;
   font-size: 0.22rem;
   color: #666666;
 }
-.home_cardheader .card-content-padding .home_carddetail i {
+.home_cardheader .home_card-content-padding .home_carddetail i {
   color: #666666!important;
-  font-size: 0.22rem;
+  font-size: 0.3rem;
   float: right;
-  margin-right: 0.15rem;
+  margin-right: 0.2rem;
+}
+.searchbar::after {
+  display: none;
+}
+.find_searchbardiv {
+  background: #FE9246;
+  height: 0.96rem;
+}
+.find_searchbardiv a {
+  background: white;
+  width: 6.9rem!important;
+  height: 0.59rem!important;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  border-radius: 6rem;
+}
+.find_cardheader {
+  height: 5.5rem!important;
+  width: 6.7rem!important;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  float: left;
+  margin-left: 0.265rem!important;
+  margin-top: 0.25rem!important;
+  margin-bottom: 0!important;
+}
+.find_cardheader .find_card-header {
+  height: 4.05rem;
+  width: 6.7rem;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  border-radius: 3% 3% 0 0;
+}
+.find_cardheader .find_card-content-padding {
+  color: #8e8e93;
+  height: 1.45rem;
+  width: 6.7rem;
+  padding-left: 0.2rem;
+  margin: 0;
+}
+.find_cardheader .find_card-content-padding .find_cardtitle {
+  font-size: 0.3rem;
+  margin: 0;
+  color: black;
+  margin-top: 0.13rem;
+  margin-left: 0.08rem;
+}
+.find_cardheader .find_card-content-padding .find_carddetail {
+  float: left;
+  margin-top: 0.1rem;
+  padding-left: 0.08rem;
+  width: 5.7rem;
+  font-size: 0.22rem;
+  color: #666666;
+}
+.find_cardheader .find_card-content-padding .find_carddetail span {
+  margin-left: 0.2rem;
+}
+.find_cardheader .find_card-content-padding img {
+  width: 0.6rem;
+  height: 0.6rem;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 100%;
+  color: #666666!important;
+  font-size: 0.3rem;
+  float: left;
+  margin-top: 0.2rem;
 }

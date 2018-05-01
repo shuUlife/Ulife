@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- Color theme for statusbar -->
+		<meta name="theme-color" content="#2196f3">
+		<title>Ulife</title>
+		<!-- Path to Framework7 Library CSS, Material Theme -->
+		<link rel="stylesheet" href="../css/framework7.min.css">
+		<!-- Path to your custom app styles-->
+		<link rel="stylesheet" href="../css/main.css">
+		<!--font awesome-->
+		<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<!--rem自适应js-->
+		<script type="text/javascript" src="../js/selfAdapt.js"></script>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+			});
+		</script>
+	</head>
+
+	<body>
+		<!-- App root element -->
+		<div id="Ulife_forall">
+			<!-- Statusbar overlay -->
+			<div class="statusbar"></div>
+			<!-- Your main view, should have "view-main" class -->
+			<div class="view view-main">
+				<!-- Initial Page, "data-name" contains page name -->
+				<div data-name="find" class="page">
+					<!-- Top searchbar -->
+					<form class="searchbar">
+						<div class="searchbar-inner find_searchbardiv">
+							<a class="find_searchbar_switch" href="#">
+								<i class="searchbar-icon"></i>
+								<span class="input-clear-button"></span>
+							</a>
+						</div>
+					</form>
+					<!-- Toolbar -->
+					<div class="toolbar tabbar tabbar-labels toolbar-bottom-md home_toolbar no-shadow">
+						<div class="toolbar-inner home_toolbar_div">
+							<a href="/home/" class="tab-link home_toolbar">
+								<i class="fa fa-home"></i>
+								<span class="tabbar-label">首页</span>
+							</a>
+							<a href="#tab2" class="tab-link tab-link-active home_toolbar">
+								<i class="fa fa-compass"></i>
+								<span class="tabbar-label">发现</span>
+							</a>
+							<a href="#tab3" class="tab-link home_toolbar">
+								<i class="fa fa-user"></i>
+								<span class="tabbar-label">我的</span>
+							</a>
+						</div>
+					</div>
+					<!-- Scrollable page content -->
+					<div class="page-content">
+						<div>
+							<div class="toolbar tabbar home_subtoolbar no-shadow">
+								<div class="toolbar-inner">
+									<a href="#tab4" class="tab-link tab-link-active"><span>全部</span></a>
+									<a href="#tab5" class="tab-link"><span>近期</span></a>
+									<a href="#tab6" class="tab-link"><span>比赛</span></a>
+									<a href="#tab7" class="tab-link"><span>分享</span></a>
+									<a href="#tab8" class="tab-link"><span>公益</span></a>
+								</div>
+							</div>
+							<div class="tabs-swipeable-wrap">
+								<!-- Tabs, tabs wrapper -->
+								<div class="tabs">
+									<!-- Tab 1, active by default -->
+									<div id="tab4" class="tab tab-active">
+										<!--tabs内卡片组-->
+										<div class="card find_cardheader">
+											<div style="background-image:url(./test/suse.jpg)" class="find_card-header align-items-flex-end"></div>
+											<div class="card-content find_card-content-padding">
+												<p class="find_cardtitle">ISHARE真人图书馆</p>
+												<div class="find_carddetail">
+													<i class="fa fa-clock-o"></i><span>2018年1月5日 15:00</span>
+													<br />
+													<i class="fa fa-map-marker"></i><span>东区平台</span>
+												</div>
+												<img src="./test/suse logo.jpg" class="home_tabs_orgimg" />
+											</div>
+										</div>	
+										<div class="card find_cardheader">
+											<div style="background-image:url(./test/g20.jpg)" class="find_card-header align-items-flex-end"></div>
+											<div class="card-content find_card-content-padding">
+												<p class="find_cardtitle">ISHARE真人图书馆</p>
+												<div class="find_carddetail">
+													<i class="fa fa-clock-o"></i><span>2018年1月5日 15:00</span>
+													<br />
+													<i class="fa fa-map-marker"></i><span>东区平台</span>
+												</div>
+												<img src="./test/suse logo.jpg" class="home_tabs_orgimg" />
+											</div>
+										</div>	
+										<div class="card find_cardheader">
+											<div style="background-image:url(./test/success.jpg)" class="find_card-header align-items-flex-end"></div>
+											<div class="card-content find_card-content-padding">
+												<p class="find_cardtitle">ISHARE真人图书馆</p>
+												<div class="find_carddetail">
+													<i class="fa fa-clock-o"></i><span>2018年1月5日 15:00</span>
+													<br />
+													<i class="fa fa-map-marker"></i><span>东区平台</span>
+												</div>
+												<img src="./test/suse logo.jpg" class="home_tabs_orgimg" />
+											</div>
+										</div>		
+									</div>
+									<!-- Tab 5 -->
+									<div id="tab5" class="tab">
+										... Tab 3 content ...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Path to Framework7 Library JS-->
+		<script type="text/javascript" src="../js/framework7.min.js"></script>
+		<!-- Path to your app js-->
+		<script type="text/javascript" src="../js/main.js"></script>
+	</body>
+
+</html>

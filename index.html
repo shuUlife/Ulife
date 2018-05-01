@@ -12,8 +12,8 @@
 		<link rel="stylesheet" href="./css/framework7.min.css">
 		<!-- Path to your custom app styles-->
 		<link rel="stylesheet" href="./css/main.css">
-		<!--framework7图标css-->
-		<link rel="stylesheet" href="./css/framework7-icons.css">
+		<!--font awesome-->
+		<link rel="stylesheet" href="./css/font-awesome.min.css" />
 		<!--rem自适应js-->
 		<script type="text/javascript" src="./js/selfAdapt.js"></script>
 		<script type="text/javascript">
@@ -37,7 +37,7 @@
 						<div class="navbar-inner">
 							<div class="title home_navbar_title">ULIFE</div>
 							<div class="right">
-								<a href="#" class="link icon-only"><i class="f7-icons">search</i></a>
+								<a href="#" class="link icon-only"><i class="fa fa-search"></i></a>
 							</div>
 						</div>
 					</div>
@@ -45,15 +45,15 @@
 					<div class="toolbar tabbar tabbar-labels toolbar-bottom-md home_toolbar no-shadow">
 						<div class="toolbar-inner home_toolbar_div">
 							<a href="#tab1" class="tab-link tab-link-active home_toolbar">
-								<i class="icon f7-icons home_tabbar_iconactive">home</i>
-								<span class="tabbar-label home_tabbar_iconactive">首页</span>
+								<i class="fa fa-home"></i>
+								<span class="tabbar-label">首页</span>
 							</a>
-							<a href="#tab2" class="tab-link home_toolbar">
-								<i class="icon f7-icons">compass</i>
+							<a href="/find/" class="tab-link home_toolbar">
+								<i class="fa fa-compass"></i>
 								<span class="tabbar-label">发现</span>
 							</a>
 							<a href="#tab3" class="tab-link home_toolbar">
-								<i class="icon f7-icons">person</i>
+								<i class="fa fa-user"></i>
 								<span class="tabbar-label">我的</span>
 							</a>
 						</div>
@@ -79,15 +79,15 @@
 							<div class="swiper-pagination home_swiper-pagination"></div>
 						</div>
 						<!--椭圆形遮挡块-->
+						<div class="home_circle"></div>
 						<div id="home_circle"></div>
 						<!--页签组件-->
 						<!-- Tabs swipeable wrapper, required to switch tabs with swipes -->
 						<div>
 							<div class="toolbar tabbar home_subtoolbar no-shadow">
 								<div class="toolbar-inner">
-									<a href="#tab4" class="tab-link tab-link-active home_subtoolbar_active">热门</a>
-									<a href="#tab5" class="tab-link">推荐</a>
-									<a href="#tab6" class="tab-link">新活动</a>
+									<a href="#tab4" class="tab-link tab-link-active"><span>推荐</span></a>
+									<a href="#tab5" class="tab-link"><span>新活动</span></a>
 								</div>
 							</div>
 							<div class="tabs-swipeable-wrap">
@@ -97,56 +97,52 @@
 									<div id="tab4" class="tab tab-active">
 										<!--tabs内卡片组-->
 										<div class="card home_cardheader">
-											<div style="background-image:url(./test/suse.jpg)" class="card-header align-items-flex-end"></div>
-											<div class="card-content card-content-padding">
+											<div style="background-image:url(./test/suse.jpg)" class="home_card-header align-items-flex-end"></div>
+											<div class="card-content home_card-content-padding">
 												<p class="home_cardtitle">ISHARE真人图书馆</p>
 												<div class="home_card_orgdiv">
 													<img src="./test/suse logo.jpg" class="home_tabs_orgimg" />
 													<span class="home_tabs_orgname">经济学院学生会</span>
 												</div>
-												<div class="home_carddetail">04/17 15:00·经管大楼 <i class="f7-icons">more_vertical</i></div>
+												<div class="home_carddetail">04/17 15:00·经管大楼 <i class="fa fa-ellipsis-v"></i></div>
 											</div>
 										</div>
 										<div class="card home_cardheader">
-											<div style="background-image:url(./test/g20.jpg)" class="card-header align-items-flex-end"></div>
-											<div class="card-content card-content-padding">
+											<div style="background-image:url(./test/g20.jpg)" class="home_card-header align-items-flex-end"></div>
+											<div class="card-content home_card-content-padding">
 												<p class="home_cardtitle">ISHARE真人图书馆</p>
 												<div class="home_card_orgdiv">
 													<img src="./test/suse logo.jpg" class="home_tabs_orgimg" />
 													<span class="home_tabs_orgname">经济学院学生会</span>
 												</div>
-												<div class="home_carddetail">04/17 15:00·经管大楼 <i class="f7-icons">more_vertical</i></div>
+												<div class="home_carddetail">04/17 15:00·经管大楼 <i class="fa fa-ellipsis-v"></i></div>
 											</div>
 										</div>
 										<div class="card home_cardheader">
-											<div style="background-image:url(./test/suse.jpg)" class="card-header align-items-flex-end"></div>
-											<div class="card-content card-content-padding">
+											<div style="background-image:url(./test/suse.jpg)" class="home_card-header align-items-flex-end"></div>
+											<div class="card-content home_card-content-padding">
 												<p class="home_cardtitle">ISHARE真人图书馆</p>
 												<div class="home_card_orgdiv">
 													<img src="./test/suse logo.jpg" class="home_tabs_orgimg" />
 													<span class="home_tabs_orgname">经济学院学生会</span>
 												</div>
-												<div class="home_carddetail">04/17 15:00·经管大楼 <i class="f7-icons">more_vertical</i></div>
+												<div class="home_carddetail">04/17 15:00·经管大楼 <i class="fa fa-ellipsis-v"></i></div>
 											</div>
 										</div>
 										<div class="card home_cardheader">
-											<div style="background-image:url(./test/suse.jpg)" class="card-header align-items-flex-end"></div>
-											<div class="card-content card-content-padding">
+											<div style="background-image:url(./test/suse.jpg)" class="home_card-header align-items-flex-end"></div>
+											<div class="card-content home_card-content-padding">
 												<p class="home_cardtitle">ISHARE真人图书馆</p>
 												<div class="home_card_orgdiv">
 													<img src="./test/suse logo.jpg" class="home_tabs_orgimg" />
 													<span class="home_tabs_orgname">经济学院学生会</span>
 												</div>
-												<div class="home_carddetail">04/17 15:00·经管大楼 <i class="f7-icons">more_vertical</i></div>
+												<div class="home_carddetail">04/17 15:00·经管大楼 <i class="fa fa-ellipsis-v"></i></div>
 											</div>
 										</div>
 									</div>
-									<!-- Tab 2 -->
+									<!-- Tab 5 -->
 									<div id="tab5" class="tab">
-										... Tab 2 content ...
-									</div>
-									<!-- Tab 3 -->
-									<div id="tab6" class="tab">
 										... Tab 3 content ...
 									</div>
 								</div>

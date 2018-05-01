@@ -1,14 +1,16 @@
 @maincolor: #FE9246;
 @deepgraytext: #666666;
 @bg: #f2f2f2;
-@font-face{
+@font-face {
     font-family: "comic sans ms";
     src: url(comic sans ms.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: "思源黑体";
     src: url(comic sans ms.ttf);
 }
+
 #Ulife_forall {
     width: 7.2rem;
     height: 100%;
@@ -19,7 +21,7 @@
     background: @bg!important;
     //解决.page-content上方空隙的问题，因为原文档写的是px单位，而实际用的rem
     .page-content {
-        padding-top: 0.44rem!important;
+        padding-top: 0.96rem!important;
     }
 }
 
@@ -64,12 +66,12 @@
 
 #home_circle {
     width: 7.2rem;
-    height: 0.24rem;
+    height: 0.12rem;
     background: white;
     border-radius: 90% 90% 0 0;
     position: relative;
     z-index: 5000;
-    bottom: 0.24rem;
+    bottom: 0.12rem;
     float: left;
 }
 
@@ -79,15 +81,11 @@
     border: none!important;
     div {
         background: white!important;
-        a {
-            color: black!important;
+        span {
+            color: black;
             font-size: 0.36rem!important;
             opacity: 0.75;
-//          font-family:;
-        }
-        .home_subtoolbar_active{
-            color: @maincolor!important;
-            opacity:1!important;
+            //          font-family:;
         }
     }
 }
@@ -101,28 +99,37 @@
         background: #ffffff!important;
         height: 0.96rem!important;
         .home_toolbar i {
-            font-size: 0.4rem!important;
+            font-size: 0.45rem!important;
+            margin-bottom: 0.05rem;
             color: @deepgraytext;
         }
         .home_toolbar span {
             font-size: 0.2rem!important;
             color: @deepgraytext;
         }
-        .home_tabbar_iconactive{
-            color: @maincolor!important;
-        }
+    }
+}
+
+//toolbar当前目标颜色
+.tab-link-active {
+    i {
+        color: @maincolor!important;
+        opacity: 1!important;
+    }
+    span {
+        color: @maincolor!important;
+        opacity: 1!important;
     }
 }
 
 //主页页签卡片组
 .card {
-    height: 3.2rem!important;
-    width: 3.2rem!important;
+    border-radius: 3%!important;
 }
 
 .home_cardheader {
-    height: 1.8rem;
-    width: 3.2rem;
+    height: 3.2rem!important;
+    width: 3.2rem!important;
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -130,14 +137,16 @@
     margin-left: 0.265rem!important;
     margin-top: 0.25rem!important;
     margin-right: 0rem!important;
-    .card-header {
+    margin-bottom: 0!important;
+    .home_card-header {
         height: 1.8rem;
         width: 3.2rem;
         background-size: cover;
         background-position: center;
         color: #fff;
+        border-radius: 3% 3% 0 0;
     }
-    .card-content-padding {
+    .home_card-content-padding {
         color: #8e8e93;
         height: 1.4rem;
         width: 3.2rem;
@@ -175,12 +184,88 @@
             width: 3.12rem;
             font-size: 0.22rem;
             color: #666666;
-            i{
+            i {
                 color: #666666!important;
-                font-size: 0.22rem;
+                font-size: 0.3rem;
                 float: right;
-                margin-right: 0.15rem;
+                margin-right: 0.2rem;
             }
+        }
+    }
+}
+
+//发现页面
+//搜索框
+.searchbar::after {
+    display: none;
+}
+
+.find_searchbardiv {
+    background: @maincolor;
+    height: 0.96rem;
+    a {
+        background: white;
+        width: 6.9rem!important;
+        height: 0.59rem!important;
+        margin: 0 auto;
+        border: 1px solid lightgray;
+        border-radius: 6rem;
+    }
+}
+
+//find界面卡片视图
+.find_cardheader {
+    height: 5.5rem!important;
+    width: 6.7rem!important;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    float: left;
+    margin-left: 0.265rem!important;
+    margin-top: 0.25rem!important;
+    margin-bottom: 0!important;
+    .find_card-header {
+        height: 4.05rem;
+        width: 6.7rem;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        border-radius: 3% 3% 0 0;
+    }
+    .find_card-content-padding {
+        color: #8e8e93;
+        height: 1.45rem;
+        width: 6.7rem;
+        padding-left: 0.2rem;
+        margin: 0;
+        .find_cardtitle {
+            font-size: 0.3rem;
+            margin: 0;
+            color: black;
+            margin-top: 0.13rem;
+            margin-left: 0.08rem;
+        }
+        .find_carddetail {
+            float: left;
+            margin-top: 0.1rem;
+            padding-left: 0.08rem;
+            width: 5.7rem;
+            font-size: 0.22rem;
+            color: #666666;
+            span{
+                margin-left: 0.2rem;
+            }
+        }
+        img {
+            width: 0.6rem;
+            height: 0.6rem;
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 100%;
+            color: #666666!important;
+            font-size: 0.3rem;
+            float: left;
+            margin-top: 0.2rem;
         }
     }
 }
