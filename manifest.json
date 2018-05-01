@@ -140,7 +140,8 @@
 		"pages": {
 			"index.html": {
 				"resources": [
-					"test/活动界面.jpg"
+					"test/活动界面.jpg",
+					"test/xnick头像.jpg"
 				],
 				"refer": [],
 				"priority": 0
@@ -153,7 +154,6 @@
 				"test/search.png",
 				"fonts/Framework7Icons-Regular.woff2",
 				"css/main.css",
-				"test/xnick头像.jpg",
 				"fonts/Framework7Icons-Regular.ttf",
 				"test/suse.jpg",
 				"test/渐变.png",

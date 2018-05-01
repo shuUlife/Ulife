@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "comic sans ms";
+  src: url(comic sans ms.ttf);
+}
+@font-face {
+  font-family: "思源黑体";
+  src: url(comic sans ms.ttf);
+}
 #Ulife_forall {
   width: 7.2rem;
   height: 100%;
@@ -6,7 +14,7 @@
 .page {
   background: #f2f2f2 !important;
 }
-.page-content {
+.page .page-content {
   padding-top: 0.44rem!important;
 }
 .home_navbar_div {
@@ -15,8 +23,9 @@
 }
 .home_navbar_div .home_navbar_title {
   float: left!important;
-  margin-left: 2.84rem!important;
+  margin-left: 2.86rem!important;
   font-size: 0.5rem!important;
+  font-family: "comic sans ms";
 }
 .home_navbar_div i {
   font-size: 0.44rem;
@@ -62,21 +71,97 @@
 .home_subtoolbar div a {
   color: black!important;
   font-size: 0.36rem!important;
+  opacity: 0.75;
+}
+.home_subtoolbar div .home_subtoolbar_active {
+  color: #FE9246 !important;
+  opacity: 1!important;
 }
 .home_toolbar {
   height: 0.96rem!important;
   position: relative;
   z-index: 999!important;
 }
-.home_toolbar_div {
+.home_toolbar .home_toolbar_div {
   background: #ffffff!important;
   height: 0.96rem!important;
 }
-.home_toolbar_div .home_toolbar i {
+.home_toolbar .home_toolbar_div .home_toolbar i {
   font-size: 0.4rem!important;
-  color: #666666 !important;
+  color: #666666;
 }
-.home_toolbar_div .home_toolbar span {
+.home_toolbar .home_toolbar_div .home_toolbar span {
   font-size: 0.2rem!important;
-  color: #666666 !important;
+  color: #666666;
+}
+.home_toolbar .home_toolbar_div .home_tabbar_iconactive {
+  color: #FE9246 !important;
+}
+.card {
+  height: 3.2rem!important;
+  width: 3.2rem!important;
+}
+.home_cardheader {
+  height: 1.8rem;
+  width: 3.2rem;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  float: left;
+  margin-left: 0.265rem!important;
+  margin-top: 0.25rem!important;
+  margin-right: 0rem!important;
+}
+.home_cardheader .card-header {
+  height: 1.8rem;
+  width: 3.2rem;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.home_cardheader .card-content-padding {
+  color: #8e8e93;
+  height: 1.4rem;
+  width: 3.2rem;
+  padding: 0;
+  margin: 0;
+}
+.home_cardheader .card-content-padding .home_cardtitle {
+  font-size: 0.3rem;
+  margin: 0;
+  color: black;
+  margin-top: 0.13rem;
+  margin-left: 0.08rem;
+}
+.home_cardheader .card-content-padding .home_card_orgdiv {
+  height: 0.32rem;
+}
+.home_cardheader .card-content-padding .home_card_orgdiv .home_tabs_orgimg {
+  width: 0.32rem;
+  height: 0.32rem;
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: 0.08rem;
+  border-radius: 100%;
+}
+.home_cardheader .card-content-padding .home_card_orgdiv .home_tabs_orgname {
+  margin-left: 0.17rem;
+  padding: 0;
+  font-size: 0.22rem;
+  color: #666666;
+  position: relative;
+  bottom: 0.05rem;
+}
+.home_cardheader .card-content-padding .home_carddetail {
+  margin-top: 0.1rem;
+  padding-left: 0.08rem;
+  width: 3.12rem;
+  font-size: 0.22rem;
+  color: #666666;
+}
+.home_cardheader .card-content-padding .home_carddetail i {
+  color: #666666!important;
+  font-size: 0.22rem;
+  float: right;
+  margin-right: 0.15rem;
 }

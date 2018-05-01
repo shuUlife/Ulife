@@ -1,7 +1,8 @@
 {
 	"index.html": {
 		"resources": [
-			"test/活动界面.jpg"
+			"test/活动界面.jpg",
+			"test/xnick头像.jpg"
 		]
 	}
 }

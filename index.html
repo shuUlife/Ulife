@@ -2,9 +2,9 @@
 <html>
 
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<!-- Color theme for statusbar -->
 		<meta name="theme-color" content="#2196f3">
 		<title>Ulife</title>
@@ -35,18 +35,18 @@
 					<!-- Top Navbar -->
 					<div class="navbar home_navbar_div">
 						<div class="navbar-inner">
-							<div class="title home_navbar_title">Ulife</div>
+							<div class="title home_navbar_title">ULIFE</div>
 							<div class="right">
 								<a href="#" class="link icon-only"><i class="f7-icons">search</i></a>
 							</div>
 						</div>
 					</div>
 					<!-- Toolbar -->
-					<div class="toolbar tabbar tabbar-labels toolbar-bottom-md home_toolbar">
+					<div class="toolbar tabbar tabbar-labels toolbar-bottom-md home_toolbar no-shadow">
 						<div class="toolbar-inner home_toolbar_div">
 							<a href="#tab1" class="tab-link tab-link-active home_toolbar">
-								<i class="icon f7-icons">home</i>
-								<span class="tabbar-label">首页</span>
+								<i class="icon f7-icons home_tabbar_iconactive">home</i>
+								<span class="tabbar-label home_tabbar_iconactive">首页</span>
 							</a>
 							<a href="#tab2" class="tab-link home_toolbar">
 								<i class="icon f7-icons">compass</i>
@@ -66,13 +66,13 @@
 							<div class="swiper-wrapper home_swiper">
 								<!-- Slides -->
 								<div class="swiper-slide home_swiper">
-									<a href="#"><img src="./test/g20.jpg" /></a>
-								</div>
-								<div class="swiper-slide">
 									<a href="#"><img src="./test/success.jpg" /></a>
 								</div>
 								<div class="swiper-slide">
-									<a href="#"><img src="./test/活动界面.jpg" /></a>
+									<a href="#"><img src="./test/g20.jpg" /></a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#"><img src="./test/activitydisplay.jpg" /></a>
 								</div>
 							</div>
 							<!-- Pagination, if required -->
@@ -82,9 +82,10 @@
 						<div id="home_circle"></div>
 						<!--页签组件-->
 						<!-- Tabs swipeable wrapper, required to switch tabs with swipes -->
-							<div class="toolbar tabbar home_subtoolbar">
+						<div>
+							<div class="toolbar tabbar home_subtoolbar no-shadow">
 								<div class="toolbar-inner">
-									<a href="#tab4" class="tab-link tab-link-active">热门</a>
+									<a href="#tab4" class="tab-link tab-link-active home_subtoolbar_active">热门</a>
 									<a href="#tab5" class="tab-link">推荐</a>
 									<a href="#tab6" class="tab-link">新活动</a>
 								</div>
@@ -94,7 +95,51 @@
 								<div class="tabs">
 									<!-- Tab 1, active by default -->
 									<div id="tab4" class="tab tab-active">
-										... Tab 1 content ...
+										<!--tabs内卡片组-->
+										<div class="card home_cardheader">
+											<div style="background-image:url(./test/suse.jpg)" class="card-header align-items-flex-end"></div>
+											<div class="card-content card-content-padding">
+												<p class="home_cardtitle">ISHARE真人图书馆</p>
+												<div class="home_card_orgdiv">
+													<img src="./test/suse logo.jpg" class="home_tabs_orgimg" />
+													<span class="home_tabs_orgname">经济学院学生会</span>
+												</div>
+												<div class="home_carddetail">04/17 15:00·经管大楼 <i class="f7-icons">more_vertical</i></div>
+											</div>
+										</div>
+										<div class="card home_cardheader">
+											<div style="background-image:url(./test/g20.jpg)" class="card-header align-items-flex-end"></div>
+											<div class="card-content card-content-padding">
+												<p class="home_cardtitle">ISHARE真人图书馆</p>
+												<div class="home_card_orgdiv">
+													<img src="./test/suse logo.jpg" class="home_tabs_orgimg" />
+													<span class="home_tabs_orgname">经济学院学生会</span>
+												</div>
+												<div class="home_carddetail">04/17 15:00·经管大楼 <i class="f7-icons">more_vertical</i></div>
+											</div>
+										</div>
+										<div class="card home_cardheader">
+											<div style="background-image:url(./test/suse.jpg)" class="card-header align-items-flex-end"></div>
+											<div class="card-content card-content-padding">
+												<p class="home_cardtitle">ISHARE真人图书馆</p>
+												<div class="home_card_orgdiv">
+													<img src="./test/suse logo.jpg" class="home_tabs_orgimg" />
+													<span class="home_tabs_orgname">经济学院学生会</span>
+												</div>
+												<div class="home_carddetail">04/17 15:00·经管大楼 <i class="f7-icons">more_vertical</i></div>
+											</div>
+										</div>
+										<div class="card home_cardheader">
+											<div style="background-image:url(./test/suse.jpg)" class="card-header align-items-flex-end"></div>
+											<div class="card-content card-content-padding">
+												<p class="home_cardtitle">ISHARE真人图书馆</p>
+												<div class="home_card_orgdiv">
+													<img src="./test/suse logo.jpg" class="home_tabs_orgimg" />
+													<span class="home_tabs_orgname">经济学院学生会</span>
+												</div>
+												<div class="home_carddetail">04/17 15:00·经管大楼 <i class="f7-icons">more_vertical</i></div>
+											</div>
+										</div>
 									</div>
 									<!-- Tab 2 -->
 									<div id="tab5" class="tab">
@@ -106,6 +151,7 @@
 									</div>
 								</div>
 							</div>
+						</div>
 					</div>
 				</div>
 			</div>

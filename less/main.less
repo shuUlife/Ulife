@@ -1,19 +1,26 @@
 @maincolor: #FE9246;
 @deepgraytext: #666666;
-@bg:#f2f2f2;
+@bg: #f2f2f2;
+@font-face{
+    font-family: "comic sans ms";
+    src: url(comic sans ms.ttf);
+}
+@font-face{
+    font-family: "思源黑体";
+    src: url(comic sans ms.ttf);
+}
 #Ulife_forall {
     width: 7.2rem;
     height: 100%;
     background: @bg;
 }
 
-.page{
+.page {
     background: @bg!important;
-}
-
-//解决.page-content上方空隙的问题，因为原文档写的是px单位，而实际用的rem
-.page-content{
-    padding-top: 0.44rem!important;
+    //解决.page-content上方空隙的问题，因为原文档写的是px单位，而实际用的rem
+    .page-content {
+        padding-top: 0.44rem!important;
+    }
 }
 
 //主页导航栏
@@ -22,16 +29,18 @@
     height: 0.96rem!important;
     .home_navbar_title {
         float: left!important;
-        margin-left: 2.84rem!important;
+        margin-left: 2.86rem!important;
         font-size: 0.5rem!important;
+        font-family: "comic sans ms";
     }
-    i{
+    i {
         font-size: 0.44rem;
         float: right!important;
         margin-right: 0.25rem!important;
     }
 }
-.navbar::after{
+
+.navbar::after {
     display: none;
 }
 
@@ -48,12 +57,12 @@
     .swiper-pagination-bullet-active {
         background: @maincolor!important;
     }
-    .home_swiper-pagination{
+    .home_swiper-pagination {
         margin-bottom: 0.17rem!important;
     }
 }
 
-#home_circle{
+#home_circle {
     width: 7.2rem;
     height: 0.24rem;
     background: white;
@@ -63,34 +72,115 @@
     bottom: 0.24rem;
     float: left;
 }
+
 //主页热门/推荐/新活动
-.home_subtoolbar{
+.home_subtoolbar {
     height: 0.96rem!important;
     border: none!important;
-    div{
+    div {
         background: white!important;
-        a{
+        a {
             color: black!important;
             font-size: 0.36rem!important;
+            opacity: 0.75;
+//          font-family:;
+        }
+        .home_subtoolbar_active{
+            color: @maincolor!important;
+            opacity:1!important;
         }
     }
 }
 
-//主页菜单栏
-.home_toolbar{
+//主页底部工具栏
+.home_toolbar {
     height: 0.96rem!important;
     position: relative;
     z-index: 999!important;
-}
-.home_toolbar_div {
-    background: #ffffff!important;
-    height: 0.96rem!important;
-    .home_toolbar i {
-        font-size: 0.4rem!important;
-        color: @deepgraytext!important;
+    .home_toolbar_div {
+        background: #ffffff!important;
+        height: 0.96rem!important;
+        .home_toolbar i {
+            font-size: 0.4rem!important;
+            color: @deepgraytext;
+        }
+        .home_toolbar span {
+            font-size: 0.2rem!important;
+            color: @deepgraytext;
+        }
+        .home_tabbar_iconactive{
+            color: @maincolor!important;
+        }
     }
-    .home_toolbar span {
-        font-size: 0.2rem!important;
-        color: @deepgraytext!important;
+}
+
+//主页页签卡片组
+.card {
+    height: 3.2rem!important;
+    width: 3.2rem!important;
+}
+
+.home_cardheader {
+    height: 1.8rem;
+    width: 3.2rem;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    float: left;
+    margin-left: 0.265rem!important;
+    margin-top: 0.25rem!important;
+    margin-right: 0rem!important;
+    .card-header {
+        height: 1.8rem;
+        width: 3.2rem;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+    }
+    .card-content-padding {
+        color: #8e8e93;
+        height: 1.4rem;
+        width: 3.2rem;
+        padding: 0;
+        margin: 0;
+        .home_cardtitle {
+            font-size: 0.3rem;
+            margin: 0;
+            color: black;
+            margin-top: 0.13rem;
+            margin-left: 0.08rem;
+        }
+        .home_card_orgdiv {
+            height: 0.32rem;
+            .home_tabs_orgimg {
+                width: 0.32rem;
+                height: 0.32rem;
+                max-height: 100%;
+                max-width: 100%;
+                margin-left: 0.08rem;
+                border-radius: 100%;
+            }
+            .home_tabs_orgname {
+                margin-left: 0.17rem;
+                padding: 0;
+                font-size: 0.22rem;
+                color: #666666;
+                position: relative;
+                bottom: 0.05rem;
+            }
+        }
+        .home_carddetail {
+            margin-top: 0.1rem;
+            padding-left: 0.08rem;
+            width: 3.12rem;
+            font-size: 0.22rem;
+            color: #666666;
+            i{
+                color: #666666!important;
+                font-size: 0.22rem;
+                float: right;
+                margin-right: 0.15rem;
+            }
+        }
     }
 }
