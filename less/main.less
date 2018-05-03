@@ -6,11 +6,6 @@
     src: url(comic sans ms.ttf);
 }
 
-@font-face {
-    font-family: "思源黑体";
-    src: url(comic sans ms.ttf);
-}
-
 #Ulife_forall {
     width: 7.2rem;
     height: 100%;
@@ -42,10 +37,9 @@
     }
 }
 
-.navbar::after {
-    display: none;
-}
-
+//.navbar::after {
+//  display: none;
+//}
 //主页滚播图片
 .home_swiper {
     width: 7.2rem;
@@ -64,11 +58,12 @@
     }
 }
 
+//弧形组件
 #home_circle {
     width: 7.2rem;
     height: 0.12rem;
     background: white;
-    border-radius: 90% 90% 0 0;
+    border-radius: 100% 100% 0 0;
     position: relative;
     z-index: 5000;
     bottom: 0.12rem;
@@ -85,7 +80,6 @@
             color: black;
             font-size: 0.36rem!important;
             opacity: 0.75;
-            //          font-family:;
         }
     }
 }
@@ -110,6 +104,17 @@
     }
 }
 
+//.home_toolbar:before{
+//  position: absolute;
+//  right: 0;
+//  top: 0;
+//  left: 0;
+//  height: 1px;
+//  content: '';
+//  -webkit-transform: scaleY(.5);
+//  transform: scaleY(.5);
+//  background-color: #c8c7cc;
+//}
 //toolbar当前目标颜色
 .tab-link-active {
     i {
@@ -205,15 +210,61 @@
     height: 0.96rem;
     a {
         background: white;
-        width: 6.9rem!important;
-        height: 0.59rem!important;
+        width: 6rem!important;
+        height: 0.49rem!important;
         margin: 0 auto;
-        border: 1px solid lightgray;
+        border: none;
         border-radius: 6rem;
+        i {
+            margin-left: 0.35rem;
+        }
+        span {
+            color: @deepgraytext;
+            font-size: 0.28rem;
+            margin-left: 1.5rem;
+        }
     }
 }
 
+//页签组件
+.find_subtoolbar {
+    height: 0.96rem!important;
+    border: none!important;
+    background: white!important;
+    position: fixed; //固定find——subtoolbar
+    top: 0.96rem; //固定find——subtoolbar
+    z-index: 5000; //固定find——subtoolbar
+    div {
+        background: white!important;
+        a {
+            margin-top: 0.23rem;
+            span {
+                color: black;
+                font-size: 0.36rem!important;
+                opacity: 0.75;
+            }
+        }
+    }
+}
+//find_subtoolbar阴影
+.find_subtoolbar:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100%;
+    top: 100%;
+    bottom: auto;
+    height: 10px;
+    pointer-events: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(40%, rgba(0, 0, 0, 0.1)), color-stop(50%, rgba(0, 0, 0, 0.05)), color-stop(80%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
 //find界面卡片视图
+.find_scrollcards {
+    margin-top: 0.96rem;
+} //固定find——subtoolbar
 .find_cardheader {
     height: 5.5rem!important;
     width: 6.7rem!important;
@@ -249,23 +300,34 @@
             float: left;
             margin-top: 0.1rem;
             padding-left: 0.08rem;
-            width: 5.7rem;
+            width: 5.4rem;
             font-size: 0.22rem;
             color: #666666;
-            span{
+            span {
                 margin-left: 0.2rem;
             }
         }
         img {
-            width: 0.6rem;
-            height: 0.6rem;
+            width: 0.8rem;
+            height: 0.8rem;
             max-width: 100%;
             max-height: 100%;
             border-radius: 100%;
             color: #666666!important;
             font-size: 0.3rem;
             float: left;
-            margin-top: 0.2rem;
         }
     }
+}
+
+
+//myown-page
+//调整myown的page-contentpadding-top
+.myown_page-content{
+//  padding-top: 0!important;
+}
+.myown_mydiv{
+    width: 7.2rem;
+    height: 4.05rem;
+    background: url(../test/渐变.png) no-repeat;
 }

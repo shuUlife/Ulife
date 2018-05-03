@@ -42,9 +42,9 @@
 						</div>
 					</div>
 					<!-- Toolbar -->
-					<div class="toolbar tabbar tabbar-labels toolbar-bottom-md home_toolbar no-shadow">
+					<div class="toolbar tabbar tabbar-labels toolbar-bottom-md home_toolbar">
 						<div class="toolbar-inner home_toolbar_div">
-							<a href="#tab1" class="tab-link tab-link-active home_toolbar">
+							<a href="#" class="tab-link tab-link-active home_toolbar">
 								<i class="fa fa-home"></i>
 								<span class="tabbar-label">首页</span>
 							</a>
@@ -52,7 +52,7 @@
 								<i class="fa fa-compass"></i>
 								<span class="tabbar-label">发现</span>
 							</a>
-							<a href="#tab3" class="tab-link home_toolbar">
+							<a href="/myown/" class="tab-link home_toolbar">
 								<i class="fa fa-user"></i>
 								<span class="tabbar-label">我的</span>
 							</a>
@@ -61,7 +61,7 @@
 					<!-- Scrollable page content -->
 					<div class="page-content">
 						<!--滚播图片  图片都应为png格式-->
-						<div class="swiper-container swiper-init home_swiper" data-pagination='{"el": ".swiper-pagination"}' data-space-between="0" data-speed="400">
+						<div class="swiper-container swiper-init home_swiper home_autoswiper" data-space-between="0" data-speed="400">
 							<!-- Slides wrapper -->
 							<div class="swiper-wrapper home_swiper">
 								<!-- Slides -->
@@ -86,15 +86,15 @@
 						<div>
 							<div class="toolbar tabbar home_subtoolbar no-shadow">
 								<div class="toolbar-inner">
-									<a href="#tab4" class="tab-link tab-link-active"><span>推荐</span></a>
-									<a href="#tab5" class="tab-link"><span>新活动</span></a>
+									<a href="#home_subtab1" class="tab-link tab-link-active"><span>推荐</span></a>
+									<a href="#home_subtab2" class="tab-link"><span>新活动</span></a>
 								</div>
 							</div>
 							<div class="tabs-swipeable-wrap">
 								<!-- Tabs, tabs wrapper -->
 								<div class="tabs">
 									<!-- Tab 1, active by default -->
-									<div id="tab4" class="tab tab-active">
+									<div id="home_subtab1" class="tab tab-active">
 										<!--tabs内卡片组-->
 										<div class="card home_cardheader">
 											<div style="background-image:url(./test/suse.jpg)" class="home_card-header align-items-flex-end"></div>
@@ -142,7 +142,7 @@
 										</div>
 									</div>
 									<!-- Tab 5 -->
-									<div id="tab5" class="tab">
+									<div id="home_subtab2" class="tab">
 										... Tab 3 content ...
 									</div>
 								</div>
